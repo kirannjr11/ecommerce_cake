@@ -19,6 +19,7 @@ public class User {
     @Column(nullable = false)
     private String firstName;
 
+    @Column(nullable = true)
     private String lastName;
 
     @NotEmpty
@@ -26,8 +27,7 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @NotEmpty
-    @Column(nullable = false)
+
     private String password;
 
 
